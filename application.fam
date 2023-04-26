@@ -1,0 +1,17 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="FlippCoin0",  # Must be unique
+    name="FlippCoin0",  # Displayed in menus
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="coin_flip_main",
+    stack_size=2 * 1024,
+    fap_category="Tools",
+    # Optional values
+    # fap_version=(0, 1),  # (major, minor)
+    fap_icon="coinFlip.png",  # 10x10 1-bit PNG
+    fap_description="A simple flipp coin app",
+    fap_author="David Dura Vilches aka ChT",
+    # fap_weburl="https://github.com/user/template",
+    fap_icon_assets="images",  # Image assets to compile for this application
+)
